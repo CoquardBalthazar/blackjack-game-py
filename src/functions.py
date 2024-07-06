@@ -28,7 +28,7 @@ def hit_or_stand(deck,player_hand, var_turn_on):
     global turn_on  # to control an upcoming while loop
     
     while True:
-        x = input("Would you like to Hit or Stand? Enter 'h' or 's' ")
+        x = input("Would you like to Hit or Stand? Enter 'Hit' or 'Stand' ")
         
         if x[0].lower() == 'h':
             hit(deck,player_hand)  # hit() function defined above

@@ -18,12 +18,18 @@ class Table():
     def rules(self):
         # Rules explanation :
         print("""
+              -------------------------------------------------------------------------------------
+
+
             WELCOME TO BLACKJACK SIMPLIFIED !
             
             Here are the rules. 
               The object is to have a hand with a total value higher than the dealer's without going over 21. 
               Kings, Queens, Jacks and Tens are worth a value of 10. 
               An Ace has the value of 1 or 11. The remaining cards are counted at face value.
+
+            
+            -------------------------------------------------------------------------------------
 
             """)
     def players_setup(self):
@@ -39,7 +45,7 @@ class Table():
         self.player_bank = Bank(self.player_hand.name, self.player_hand.type, bank = 20) # default value is 20
 
         while True:
-            ready = input("Are you ready to start ? (y/n) : ")
+            ready = input("Are you ready to start ? (yes/no) : ")
             if ready in ["y", "yes"]:
                 break
             else:
@@ -120,7 +126,3 @@ class Table():
         
             # Inform Player of their chips total 
             print("\nPlayer's bank stands at",self.player_bank.bank)
-
-
-
-
