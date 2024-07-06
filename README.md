@@ -1,4 +1,5 @@
 This repository presents a simplified version of the famous game Blackjack programmed in Python using Object Oriented Programming.
+1-Player game vs Automated Computer player
 
 ## A project full of learnings : structure, testing, refactoring
 
